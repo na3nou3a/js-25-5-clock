@@ -1,0 +1,87 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: monospace, verdana, sans-serif;
+  min-height: 100vh;
+  background-color: rgb(171, 189, 241);
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  min-height: 100vh;
+}
+.header,
+.footer {
+  background-color: rgb(118, 150, 245);
+}
+.header h1 {
+  font-weight: 400;
+}
+.container {
+  max-width: 720px;
+}
+main {
+  min-height: 80vh;
+}
+.btn-icon {
+  display: inline-block;
+  padding: 0.25rem;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn-icon:hover {
+  color: #000;
+}
+.btn-icon:focus {
+  border: 1px dashed blue;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.dark-bcg {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.bcg {
+  background-size: cover;
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bcg1 {
+  background-image: url('../images/bcg1.jpg');
+}
+
+.bcg2 {
+  background-image: url('../images/bcg2.jpg');
+}
+
+@media (min-width: 800px) {
+  .bcg {
+    background-position: center;
+    background-size: contain;
+  }
+}

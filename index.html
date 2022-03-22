@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- bootstrap css -->
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<!-- bootstrap icons -->
+<link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css" />
+<!-- custom css -->
+<link rel="stylesheet" href="./css/styles.css" />
+<title>25 5 Clock</title>
+<body>
+  <header class="header p-1">
+    <h1 class="display-4 text-capitalize">25 / 5 Clock</h1>
+  </header>
+  <div class="container bcg-container bcg mb-3">
+    <main class="mt-4 p-4">
+      <div class="row p-1 mb-2">
+        <div class="col-md-6 mb-2">
+          <h3 id="break-label" class="dark-bcg">break length</h3>
+          <div
+            class="d-flex justify-content-center align-items-center mt-3 dark-bcg"
+          >
+            <button id="break-decrement" class="btn-icon me-2">
+              <i class="bi bi-arrow-down-circle icon"></i>
+            </button>
+            <h4 class="mb-0">
+              <span id="break-length">
+                <!-- 5 -->
+              </span>
+              <span class="text-lowercase">min</span>
+            </h4>
+
+            <button id="break-increment" class="btn-icon ms-2">
+              <i class="bi bi-arrow-up-circle icon"></i>
+            </button>
+          </div>
+        </div>
+        <!-- end col 1 -->
+        <div class="col-md-6 mb-2">
+          <h3 id="session-label" class="dark-bcg">session length</h3>
+          <div
+            class="d-flex justify-content-center align-items-center mt-3 dark-bcg"
+          >
+            <button id="session-decrement" class="btn-icon me-2">
+              <i class="bi bi-arrow-down-circle icon"></i>
+            </button>
+            <h4 class="mb-0">
+              <span id="session-length">
+                <!-- 25 -->
+              </span>
+              <span class="text-lowercase">min</span>
+            </h4>
+            <button id="session-increment" class="btn-icon ms-2">
+              <i class="bi bi-arrow-up-circle icon"></i>
+            </button>
+          </div>
+        </div>
+        <!-- end col 2 -->
+      </div>
+      <!-- end row -->
+      <div
+        class="d-flex flex-column justify-content-center align-items-center border border-5 border-secondary rounded-3 p-4 text-capitalize w-75 my-4 mx-auto"
+      >
+        <h4
+          id="timer-label"
+          class="fs-2 text-capitalize py-1 px-2 mb-0 dark-bcg"
+        >
+          <!-- session -->
+        </h4>
+        <h4 id="time-left" class="fs-1 py-1 px-2 mb-0 mt-2 dark-bcg">
+          <!-- 25:00 -->
+        </h4>
+
+        <div
+          class="d-flex justify-content-center align-items-center py-1 px-2 mt-4 dark-bcg"
+        >
+          <button id="start_stop" class="btn-icon me-2">
+            <i class="bi bi-play-circle icon"></i>
+          </button>
+          <button id="reset" class="btn-icon">
+            <i class="bi bi-arrow-repeat icon"></i>
+          </button>
+        </div>
+      </div>
+      <audio
+        id="beep"
+        preload="auto"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
+      ></audio>
+    </main>
+  </div>
+  <footer class="footer p-1">
+    <p class="mb-0">&COPY; 2022</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
